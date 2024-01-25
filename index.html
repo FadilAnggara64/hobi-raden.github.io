@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R. Fadil Anggara - Hobby</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).on('scroll', function(){
+    if ( $(window).scrollTop() > 30) {
+        $('#container-header').addClass('change-color');
+    } else {
+        $('#container-header').removeClass('change-color');
+    }
+    });
+    jQuery(window).on('scroll', function() {
+    if(jQuery(window).scrollTop() > 30) {
+        jQuery('#container-header').css('color', 'black');
+        jQuery('#container-header').css('box-shadow', '1px 0 8px grey');
+    } else {
+       jQuery('#container-header').css('color', 'white');
+    } 
+})
+    jQuery(window).on('scroll', function() {
+        if(jQuery(window).scrollTop() > 30) {
+            jQuery('#menu-bar').css('color', 'black');
+        } else {
+        jQuery('#menu-bar').css('color', 'black');
+        } 
+    })
+    $(document).on('scroll', function(){
+    if ( $(window).scrollTop() > 30) {
+        $('#menu-bar').addClass('hover');
+    } else {
+        $('#menu-bar').removeClass('hover');
+    }
+    });
+    jQuery(window).on('scroll', function() {
+        if(jQuery(window).scrollTop() > 30) {
+            jQuery('#b').css('color', '#F0A500');
+        } else {
+        jQuery('#b').css('color', 'white');
+        } 
+    })
+    jQuery(window).on('scroll', function() {
+        if(jQuery(window).scrollTop() > 30) {
+            jQuery('.c').css('color', 'black');
+        } else {
+        jQuery('.c').css('color', 'black');
+        } 
+    })
+    </script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="container-header">
+           <h1 id="d">R. Fadil<span id="b">Anggara</span></h1>
+           <div id="menu-bar">
+                <a><a href="#home" class="c">Home</a></a>
+                <a><a href="#tentang" class="c">Boxing</a></a>
+                <a><a href="#menu" class="c">Workout</a></a>
+                <a><a href="#kontak" class="c">Running</a></a>
+           </div>
+        </div>
+     </header>
+     
+     <div class="container-main" id="home">
+        <h2></h2>
+     </div>
+     <div class="container-main2" id="tentang">
+        <h2>Boxing</h2>
+     </div>
+     <div class="container-main2" id="menu">
+        <h2>Workout</h2>
+     </div>
+     <div class="container-main2" id="kontak">
+        <h2>Running</h2>
+     </div>
+</body>
+</html>
